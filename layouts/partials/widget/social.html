@@ -1,0 +1,13 @@
+<section class="widget social">
+    {{/*  <div class="widget-icon">
+        {{ partial "helper/icon" "link" }}
+    </div> */}}
+    <h2 class="widget-title section-title">{{ T "widgetSocialTitle" }}</h2>
+
+    {{- with .Site.Params.social }}
+    <div>
+        {{ partial "social-icons.html" . }}
+    </div>
+    {{- end }}
+
+</section>
